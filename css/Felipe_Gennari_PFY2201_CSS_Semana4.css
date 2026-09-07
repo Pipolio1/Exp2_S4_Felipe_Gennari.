@@ -1,0 +1,140 @@
+/* ============================================================
+   Gaming House — Hoja de estilos Semana 4 (tema sobre Bootstrap 5)
+   Autor: Felipe Gennari — PFY2201 Desarrollo Frontend I
+   Este CSS solo personaliza colores y detalles visuales;
+   todo el layout responsivo lo entrega Bootstrap 5.
+   ============================================================ */
+
+/* ---------- Variables CSS (custom properties) ---------- */
+:root {
+    --color-fondo: #0d0d17;
+    --color-superficie: #1a1a2e;
+    --color-acento: #7c3aed;
+    --color-acento-2: #22d3ee;
+    --color-texto: #e5e5f0;
+    --color-texto-suave: #a0a0b8;
+}
+
+/* ---------- Base de la página ---------- */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* ---------- Encabezado ---------- */
+#inicio {
+    background-color: var(--color-superficie);
+    border-bottom: 4px solid var(--color-acento);
+}
+
+#inicio p {
+    color: var(--color-texto-suave);
+    font-size: 1.1rem;
+}
+
+/* Logo: responsivo, nunca más ancho que 550px */
+.logo {
+    max-width: 550px;
+    border-radius: 12px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-gamer {
+    background-color: var(--color-acento);
+}
+
+.navbar-gamer .nav-link {
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces del menú */
+.navbar-gamer .nav-link:hover,
+.navbar-gamer .nav-link:focus {
+    background-color: var(--color-acento-2);
+    color: var(--color-fondo);
+}
+
+/* ---------- Carrusel de ofertas ---------- */
+#ofertas .carousel {
+    max-width: 1100px;
+    border: 2px solid var(--color-acento);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Sección de productos ---------- */
+#productos h2 {
+    color: var(--color-acento-2);
+}
+
+/* Tarjetas de producto (componente card de Bootstrap personalizado) */
+.card-producto {
+    background-color: var(--color-superficie);
+    border: 2px solid var(--color-acento);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: var(--color-texto);
+}
+
+/* La tarjeta se "eleva" al pasar el mouse */
+.card-producto:hover {
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+}
+
+.card-producto .card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-producto .card-text {
+    color: var(--color-texto-suave);
+}
+
+/* Precio destacado dentro de la descripción */
+.precio {
+    color: var(--color-acento-2);
+    font-weight: bold;
+}
+
+/* Botón de acción con el color de acento del tema */
+.btn-gamer {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-gamer:hover,
+.btn-gamer:focus {
+    background-color: var(--color-acento-2);
+    border-color: var(--color-acento-2);
+    color: var(--color-fondo);
+}
+
+/* ---------- Pie de página ---------- */
+#contacto {
+    background-color: var(--color-superficie);
+    border-top: 4px solid var(--color-acento);
+}
+
+#contacto h2 {
+    color: var(--color-acento-2);
+}
+
+#contacto p {
+    color: var(--color-texto-suave);
+}
+
+.redes a {
+    color: var(--color-acento-2);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: var(--color-texto);
+    text-decoration: underline;
+}
