@@ -34,9 +34,11 @@ body {
     font-size: 1.1rem;
 }
 
-/* Logo: responsivo, nunca más ancho que 550px */
+/* Logo: responsivo, usa todo el ancho disponible hasta un tope de 550px */
 .logo {
+    width: 100%;
     max-width: 550px;
+    height: auto;
     border-radius: 12px;
 }
 
